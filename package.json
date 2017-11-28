@@ -1,7 +1,6 @@
 {
   "name": "v2",
   "version": "1.0.0",
-  "description": "",
   "main": "app2.js",
   "dependencies": {
     "connect-flash": "^0.1.1",
@@ -15,8 +14,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "mo z",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }
