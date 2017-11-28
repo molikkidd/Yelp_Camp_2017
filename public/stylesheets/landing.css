@@ -1,0 +1,86 @@
+body {
+  background-color: #000;
+}
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+#landing-header h1 {
+  color: #fff;
+}
+
+#color{
+  color:white;
+}
+
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url(http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/52/r2/p052r2zh.jpg) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(http://d98uffoa56ghc.cloudfront.net/wp-content/uploads/2017/03/20102545/20-Tropical-Paradise-Vacation-Ideas-title.jpg);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(https://www.minikinescapades.com/wp-content/uploads/2015/10/Kleftiko-in-milos-greece.jpg);
+  animation-delay: 20s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/NLTjHTkUl/videoblocks-tropical-lagoon-with-azure-water-beach-by-the-kayangan-lake-philippines-view-coron-island-with-cove-bay-at-kayangan-lake-lagoon-with-sailing-boats-philippines-4k-video-travel-concept-aerial_s2etvktfz_thumbnail-full01.png);
+  animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(https://www.danielis-yachting.com/images/explore-coves-sailing-in-croatia.jpg);
+  animation-delay: 40s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
